@@ -1,7 +1,8 @@
 export default {
   //获取当前日期
-  getCurDate(){
-    let curDate = new Date();
+  getCurDate(days){
+    let curDateTime = new Date().getTime() + 1000*60*60*24*(+days || 0); // days 前(-)或后(+)的天数
+    let curDate = new Date(curDateTime);
     let year = curDate.getFullYear();
     let month = curDate.getMonth() + 1;
     let day = curDate.getDate();     
