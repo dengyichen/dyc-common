@@ -1,7 +1,8 @@
 export default {
   //格式化日期+时间
-  formatDateTime(date){
-    if(date){
+  formatDateTime(str){
+    if(str){
+      let date = new Date(str);
       let year = date.getFullYear();
       let month = (date.getMonth() + 1).toString().padStart(2,'0');
       let day = date.getDate().toString().padStart(2,'0');
@@ -10,16 +11,17 @@ export default {
       let second = date.getSeconds().toString().padStart(2,'0');
       return `${year}-${month}-${day} ${hour}:${minute}:${second}`
     }
-    return date;
+    return str;
   },
   //格式化日期
-  formatDate(date){
-    if(date){
+  formatDate(str){
+    if(str){
+      let date = new Date(str);
       let year = date.getFullYear();
       let month = (date.getMonth() + 1).toString().padStart(2,'0');
       let day = date.getDate().toString().padStart(2,'0');
       return `${year}-${month}-${day}`
     }
-    return date;
+    return str;
   }
 }
