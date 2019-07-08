@@ -11,4 +11,7 @@ export default {
   mobileVer(mobile){
     return /^1[345789]\d{9}$/.test(mobile);
   },
+  bankCardVer(){
+    return /^([1-9]{1})(\d{14}|\d{18})$/.test(mobile);
+  }
 }
