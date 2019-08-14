@@ -13,7 +13,7 @@ export default {
   },
   //验证银行卡号
   bankCardVer(bnkCard){
-    return /^\d{15,19}$/.test(bnkCard);
+    return /^(\d{16}|\d{17}|\d{19})$/.test(bnkCard);
   },
   //验证正浮点数
   keepDecimalVer(num,digit = 2){
