@@ -93,6 +93,9 @@
 .flex10{
   flex: 10;
 }
+.flexNone{
+    flex:none;
+}
 .flexColumn{
   flex-direction:column;
 }

@@ -8,6 +8,14 @@ export default {
     let day = curDate.getDate();     
     return `${year}-${month < 10 ? "0" + month : month}-${day < 10 ? "0" + day : day}`
   },
+  //对象清除空格
+  objClearSpace(parameter,exclude){
+    for(var key in parameter) {
+        if(!key.includes(exclude)){
+            parameter[key] = `${parameter[key]} `.trim();
+        }
+    }
+  },
   //下载elx
   downloadXls (data, name) {
     if (data) {
