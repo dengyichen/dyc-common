@@ -19,5 +19,9 @@ export default {
   keepDecimalVer(num,digit = 2){
     let reg = new RegExp(`^\\d+(\\.\\d{1,${digit}})?$`);
     return reg.test(num);
+  },
+  //验证只包含字母和数字
+  letterNumberVer(str){
+    return /^[a-zA-Z0-9]+$/.test(str);
   }
 }

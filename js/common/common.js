@@ -15,6 +15,7 @@ export default {
             parameter[key] = `${parameter[key]} `.trim();
         }
     }
+    return parameter;
   },
   //下载elx
   downloadXls (data, name) {
