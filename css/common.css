@@ -58,6 +58,9 @@
 .forceWrap{
   word-break:break-all;
 }
+.noSelect{
+    user-select:none;
+}
 
 /* flex */
 .flex{
@@ -135,6 +138,15 @@
   font-size: 20px;
 }
 .fs22{
+  font-size: 22px;
+}
+.fs24{
+    font-size: 22px;
+}
+.fs26{
+  font-size: 22px;
+}
+.fs28{
   font-size: 22px;
 }
 
