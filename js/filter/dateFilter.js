@@ -1,7 +1,7 @@
 export default {
     //格式化日期+时间
     formatDateTime(str) {
-        if (str) return str;
+        if (!str) return str;
         let date = new Date(str);
         let year = date.getFullYear();
         let month = (date.getMonth() + 1).toString().padStart(2, '0');
