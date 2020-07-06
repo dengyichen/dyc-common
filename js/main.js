@@ -5,8 +5,8 @@ import filter from './filter/filter.js'
 import directive from './common/directive.js'
 
 module.exports = {
-  common,
-  verification,
-  filter,
-  directive
+    common,
+    verification,
+    filter,
+    directive
 }
