@@ -8,9 +8,9 @@ export default {
             });
         });
     },
-    //数字保留两位小数
-    numToFixed2(num) {
+    //数字保留N位小数，默认2位
+    numToFixed2(num, digit = 2) {
         if (isNaN(+num)) return num;
-        return +(+num).toFixed(2);
+        return (+num).toFixed(digit);
     },
 }

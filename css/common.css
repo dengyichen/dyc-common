@@ -141,13 +141,13 @@
     font-size: 22px;
 }
 .fs24{
-    font-size: 22px;
+    font-size: 24px;
 }
 .fs26{
-    font-size: 22px;
+    font-size: 26px;
 }
 .fs28{
-    font-size: 22px;
+    font-size: 28px;
 }
 
 /* margin */
@@ -293,6 +293,18 @@
 }
 .p30{
     padding: 30px;
+}
+.p35{
+    padding: 35px;
+}
+.p40{
+    padding: 40px;
+}
+.p45{
+    padding: 45px;
+}
+.p50{
+    padding: 50px;
 }
 
 /* margin */
