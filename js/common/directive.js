@@ -13,10 +13,22 @@ export default {
                     el.style.top = `${e.clientY - disY}px`;
                 };
                 document.onmouseup = (e) => {
+                    if(e.clientY - disY < 0){
+                        el.style.top = 0;
+                    }
+                    if(e.clientX - disX < 0){
+                        el.style.left = 0;
+                    }
+                    if(el.offsetTop + el.offsetHeight > $(document).height()){
+                        el.style.top = `${$(document).height() - el.offsetHeight}px`;
+                    }
+                    if(el.offsetLeft + el.offsetWidth > $(document).width()){
+                        el.style.left = `${$(document).width() - el.offsetWidth}px`;
+                    }
                     document.onmousemove = null;
                     document.onmouseup = null;
                 };
             }
-        };
+        }
     }
 }
